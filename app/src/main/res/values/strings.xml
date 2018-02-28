@@ -1,0 +1,72 @@
+<resources>
+
+    <string name="app_name">My Quiz</string>
+
+    <!--Header Text-->
+    <string name="header">Body Quiz</string>
+
+
+    <!--Question 1 hint text-->
+    <string name="hint_text">two words</string>
+
+    <!--Questions and Answers-->
+    <!--EditText-->
+    <string name="questionOne">1. ________ _________ burns involve the epidermis and part of the dermis.
+        This skin appears to be red, tan, or white. The skin is also blistered and painful.</string><!--Correct answer: second degree-->
+
+    <!--RadioButton-->
+    <string name="questionTwo">2. Which of the following is dense irregular connective tissue that anchors bone to bone?</string>
+
+    <string name="qTwoRbOne">Tendons</string>
+    <string name="qTwoRbTwo">Ligaments</string> <!--Correct answer-->
+    <string name="qTwoRbThree">Bone Marrow</string>
+    <string name="qTwoRbFour">Adipose Tissue</string>
+
+
+    <!--CheckBox-->
+    <string name="questionThree">3. “Friction Ridges” are commonly known as ________ and _________</string>
+
+    <string name="qThreeCbOne">Fingerprints</string> <!--Correct answer-->
+    <string name="qThreeCbTwo">Fingernails</string>
+    <string name="qThreeCbThree">Toeprints</string> <!--Correct answer-->
+    <string name="qThreeCbFour">Freckles</string>
+
+
+    <!--RadioButton-->
+    <string name="questionFour">4. Which of the following is NOT a function of bone?</string>
+
+    <string name="qFourRbOne">Support and Protection</string>
+    <string name="qFourRbTwo">Mineral Storage</string>
+    <string name="qFourRbThree">Sensory Reception</string> <!--Correct answer-->
+    <string name="qFourRbFour">Movement</string>
+
+
+    <!--CheckBox-->
+    <string name="questionFive">5. Which is NOT a function of hair?</string>
+
+    <string name="qFiveCbOne">Chemical Signal Dispersal</string>
+    <string name="qFiveCbTwo">Facial Expression</string>
+    <string name="qFiveCbThree">Protection</string>
+    <string name="qFiveCbFour">Hemopoiesis</string> <!--Correct answer-->
+
+
+    <!--RadioButton-->
+    <string name="questionSix">6. The humerus is an example of a</string>
+
+    <string name="qSixRbOne">Short bone</string>
+    <string name="qSixRbTwo">Long bone</string> <!--Correct answer-->
+    <string name="qSixRbThree">Flat bone</string>
+    <string name="qSixRbFour">Irregular bone</string>
+
+
+    <!--Submit Button-->
+    <string name="submitBtn">Submit Answers</string>
+
+    <!--Reset Button-->
+    <string name="resetBtn">Reset</string>
+
+    <!--Toast Message-->
+    <string name="scoreMessage">"You scored %1$d out of 6.</string>
+
+
+</resources>
