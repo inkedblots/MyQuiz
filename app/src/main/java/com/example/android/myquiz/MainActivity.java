@@ -16,27 +16,33 @@ public class MainActivity extends AppCompatActivity {
 
     private int score = 0;
 
+    EditText questionOneAnswer;
+    RadioButton qTwoRbTwo, qFourRbThree, qSixRbTwo;
+    CheckBox qThreeCbOne, qThreeCbTwo, qThreeCbThree, qThreeCbFour, qFiveCbOne;
+    CheckBox qFiveCbTwo, qFiveCbThree, qFiveCbFour;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
         // Hide the keyboard
-        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
-        setContentView(R.layout.activity_main);
-    }
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
-    private final EditText questionOneAnswer = this.findViewById(R.id.question1_answer);
-    private final RadioButton qTwoRbTwo = this.findViewById(R.id.qTwoRbTwo);
-    private final CheckBox qThreeCbOne = this.findViewById(R.id.qThreeCbOne);
-    private final CheckBox qThreeCbTwo = this.findViewById(R.id.qThreeCbTwo);
-    private final CheckBox qThreeCbThree = this.findViewById(R.id.qThreeCbThree);
-    private final CheckBox qThreeCbFour = this.findViewById(R.id.qThreeCbFour);
-    private final RadioButton qFourRbThree = this.findViewById(R.id.qFourRbThree);
-    private final CheckBox qFiveCbOne = this.findViewById(R.id.qFiveCbOne);
-    private final CheckBox qFiveCbTwo = this.findViewById(R.id.qFiveCbTwo);
-    private final CheckBox qFiveCbThree = this.findViewById(R.id.qFiveCbThree);
-    private final CheckBox qFiveCbFour = this.findViewById(R.id.qFiveCbFour);
-    private final RadioButton qSixRbTwo = this.findViewById(R.id.qSixRbTwo);
+        questionOneAnswer = findViewById(R.id.questionOne_answer);
+        qTwoRbTwo = findViewById(R.id.qTwoRbTwo);
+        qThreeCbOne = findViewById(R.id.qThreeCbOne);
+        qThreeCbTwo = findViewById(R.id.qThreeCbTwo);
+        qThreeCbThree = findViewById(R.id.qThreeCbThree);
+        qThreeCbFour = findViewById(R.id.qThreeCbFour);
+        qFourRbThree = findViewById(R.id.qFourRbThree);
+        qFiveCbOne = findViewById(R.id.qFiveCbOne);
+        qFiveCbTwo = findViewById(R.id.qFiveCbTwo);
+        qFiveCbThree = findViewById(R.id.qFiveCbThree);
+        qFiveCbFour = findViewById(R.id.qFiveCbFour);
+        qSixRbTwo = findViewById(R.id.qSixRbTwo);
+
+    }
 
     //Calculate the total score
     private int getTotalScore() {
@@ -75,18 +81,18 @@ public class MainActivity extends AppCompatActivity {
 
 
         //  Scoring
-        if (answer1) score++;
-        if (answer2) score++;
-        if (answer3) score++;
-        if (answer4) score++;
-        if (answer5) score++;
-        if (answer6) score++;
+        if (answer1) {score++;}
+        if (answer2) {score++;}
+        if (answer3) {score++;}
+        if (answer4) {score++;}
+        if (answer5) {score++;}
+        if (answer6) {score++;}
         return score;
     }
 
         public void submitAnswers(View view) {
             Button submitButton = findViewById(R.id.submitBtn);
-            submitButton.setEnabled(true);
+            submitButton.setEnabled(false);
 
             int finalScore = getTotalScore();
             Toast.makeText(this, String.format(getString(R.string.scoreMessage), finalScore), Toast.LENGTH_SHORT).show();
@@ -99,6 +105,3 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
-
-
-
