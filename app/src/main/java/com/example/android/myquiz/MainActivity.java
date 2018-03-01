@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     RadioButton qTwoRbTwo, qFourRbThree, qSixRbTwo;
     CheckBox qThreeCbOne, qThreeCbTwo, qThreeCbThree, qThreeCbFour, qFiveCbOne;
     CheckBox qFiveCbTwo, qFiveCbThree, qFiveCbFour;
+    Button resetBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         qFiveCbThree = findViewById(R.id.qFiveCbThree);
         qFiveCbFour = findViewById(R.id.qFiveCbFour);
         qSixRbTwo = findViewById(R.id.qSixRbTwo);
-
     }
 
     //Calculate the total score
@@ -121,9 +121,12 @@ public class MainActivity extends AppCompatActivity {
 
         /*Resets the score to zero */
     public void resetScore(View v) {
+        score = 0;
+        displayScore(score);
+
         Button resetButton = findViewById(R.id.resetBtn);
         resetButton.setEnabled(false);
-        score = 0;
+
 
     }
 

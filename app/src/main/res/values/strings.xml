@@ -60,7 +60,7 @@
 
 
     <!--Submit Button-->
-    <string name="submitBtn">Submit Answers</string>
+    <string name="submitBtn">Submit</string>
 
     <!--Reset Button-->
     <string name="resetBtn">Reset</string>

@@ -9,8 +9,8 @@
         android:id="@+id/quiz_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:paddingBottom="8dp"
             android:text="@string/header"
             android:textSize="30sp"
-            android:textStyle="italic"/>
+            android:textStyle="italic" />
 
         <!--Question 1-->
         <TextView
@@ -33,15 +33,15 @@
             android:id="@+id/questionOne_answer"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="@string/hint_text"/>
+            android:hint="@string/hint_text"
+            android:inputType="text" />
 
         <!--Question 2-->
         <TextView
             android:id="@+id/questionTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp"
+            android:paddingTop="10dp"
             android:text="@string/questionTwo"
             android:textSize="18sp" />
 
@@ -56,32 +56,32 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:textSize="16sp"
-                android:text="@string/qTwoRbOne" />
+                android:text="@string/qTwoRbOne"
+                android:textSize="16sp" />
 
             <RadioButton
                 android:id="@+id/qTwoRbTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:textSize="16sp"
-                android:text="@string/qTwoRbTwo" />
+                android:text="@string/qTwoRbTwo"
+                android:textSize="16sp" />
 
             <RadioButton
                 android:id="@+id/qTwoRbThree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:textSize="16sp"
-                android:text="@string/qTwoRbThree" />
+                android:text="@string/qTwoRbThree"
+                android:textSize="16sp" />
 
             <RadioButton
                 android:id="@+id/qTwoRbFour"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:textSize="16sp"
-                android:text="@string/qTwoRbFour" />
+                android:text="@string/qTwoRbFour"
+                android:textSize="16sp" />
 
         </RadioGroup>
 
@@ -91,7 +91,7 @@
             android:id="@+id/questionThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp"
+            android:paddingTop="10dp"
             android:text="@string/questionThree"
             android:textSize="18sp" />
 
@@ -100,35 +100,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/qThreeCbOne"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/qThreeCbTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/qThreeCbTwo"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/qThreeCbThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/qThreeCbThree"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/qThreeCbFour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/qThreeCbFour"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
         <!--Question 4-->
         <TextView
             android:id="@+id/questionFour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp"
+            android:paddingTop="10dp"
             android:text="@string/questionFour"
             android:textSize="18sp" />
 
@@ -141,28 +141,29 @@
                 android:id="@+id/qFourRbOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="@string/qFourRbOne" />
+                android:text="@string/qFourRbOne"
+                android:textSize="16sp" />
 
             <RadioButton
                 android:id="@+id/qFourRbTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/qFourRbTwo" />
+                android:text="@string/qFourRbTwo"
+                android:textSize="16sp" />
 
             <RadioButton
                 android:id="@+id/qFourRbThree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="@string/qFourRbThree" />
+                android:text="@string/qFourRbThree"
+                android:textSize="16sp" />
 
             <RadioButton
                 android:id="@+id/qFourRbFour"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="@string/qFourRbFour" />
+                android:text="@string/qFourRbFour"
+                android:textSize="16sp" />
         </RadioGroup>
 
         <!--Question 5-->
@@ -170,7 +171,7 @@
             android:id="@+id/questionFive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp"
+            android:paddingTop="10dp"
             android:text="@string/questionFive"
             android:textSize="18sp" />
 
@@ -178,36 +179,36 @@
             android:id="@+id/qFiveCbOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="@string/qFiveCbOne" />
+            android:text="@string/qFiveCbOne"
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/qFiveCbTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="@string/qFiveCbTwo" />
+            android:text="@string/qFiveCbTwo"
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/qFiveCbThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="@string/qFiveCbThree" />
+            android:text="@string/qFiveCbThree"
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/qFiveCbFour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="@string/qFiveCbFour" />
+            android:text="@string/qFiveCbFour"
+            android:textSize="16sp" />
 
         <!--Question 6-->
         <TextView
             android:id="@+id/questionSix"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp"
+            android:paddingTop="10dp"
             android:text="@string/questionSix"
             android:textSize="18sp" />
 
@@ -220,47 +221,58 @@
                 android:id="@+id/qSixRbOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="@string/qSixRbOne" />
+                android:text="@string/qSixRbOne"
+                android:textSize="16sp" />
 
             <RadioButton
                 android:id="@+id/qSixRbTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="@string/qSixRbTwo" />
+                android:text="@string/qSixRbTwo"
+                android:textSize="16sp" />
 
             <RadioButton
                 android:id="@+id/qSixRbThree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="@string/qSixRbThree" />
+                android:text="@string/qSixRbThree"
+                android:textSize="16sp" />
 
             <RadioButton
                 android:id="@+id/qSixRbFour"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="@string/qSixRbFour" />
+                android:paddingBottom="10dp"
+                android:text="@string/qSixRbFour"
+                android:textSize="16sp" />
         </RadioGroup>
 
 
         <!--Submit button-->
-        <Button
-            android:id="@+id/submitBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="submitAnswers"
-            android:text="@string/submitBtn" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/resetBtn"
-            android:layout_width="80dp"
-            android:layout_height="40dp"
-            android:layout_margin="20dp"
-            android:onClick="resetScore"
-            android:text="@string/resetBtn" />
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/shape"
+                android:onClick="submitAnswers"
+                android:text="@string/submitBtn" />
+
+            <Button
+                android:id="@+id/resetBtn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/shape"
+                android:onClick="resetScore"
+                android:text="@string/resetBtn" />
+        </LinearLayout>
     </LinearLayout>
 
 </ScrollView>
