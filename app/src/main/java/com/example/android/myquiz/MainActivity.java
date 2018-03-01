@@ -53,14 +53,17 @@ public class MainActivity extends AppCompatActivity {
 //        Boolean answer1 = q1s.equals("second degree") || q1s.equals("Second Degree") || q1s.equals("2nd degree");
 
         EditText questionOneAnswer = findViewById(R.id.questionOne_answer);
-        boolean answer1 = true;
+        boolean answer1;
         String q1s = questionOneAnswer.getText().toString();
-        if (q1s.matches("second degree") || q1s.equals("Second Degree") || q1s.equals("2nd degree")) {
 
-           return answer1;
+        if (q1s.isEmpty()) {
+            return -1;
+        }
 
+        if (q1s.equalsIgnoreCase("second degree") || q1s.equals("2nd degree")) {
+            answer1 = true;
         } else {
-            Toast.makeText(this, "You did not enter an answer", Toast.LENGTH_SHORT).show();
+            answer1 = false;
         }
 
 
@@ -102,13 +105,19 @@ public class MainActivity extends AppCompatActivity {
         return score;
     }
 
-        public void submitAnswers(View view) {
-            Button submitButton = findViewById(R.id.submitBtn);
-            submitButton.setEnabled(false);
+    public void submitAnswers(View view) {
+        int finalScore = getTotalScore();
 
-            int finalScore = getTotalScore();
-            Toast.makeText(this, String.format(getString(R.string.scoreMessage), finalScore), Toast.LENGTH_SHORT).show();
+        if (finalScore < 0) {
+            Toast.makeText(this, "Please answer all questions", Toast.LENGTH_SHORT).show();
+            score = 0;
+            return;
         }
+
+        Button submitButton = findViewById(R.id.submitBtn);
+        submitButton.setEnabled(false);
+        Toast.makeText(this, String.format(getString(R.string.scoreMessage), finalScore), Toast.LENGTH_SHORT).show();
+    }
 
         /*Resets the score to zero */
     public void resetScore(View v) {
