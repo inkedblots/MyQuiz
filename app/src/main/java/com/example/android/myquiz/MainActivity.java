@@ -49,8 +49,20 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Question 1 EditText - Correct Answer is (Second Degree)
+//        String q1s = questionOneAnswer.getText().toString();
+//        Boolean answer1 = q1s.equals("second degree") || q1s.equals("Second Degree") || q1s.equals("2nd degree");
+
+        EditText questionOneAnswer = findViewById(R.id.questionOne_answer);
+        boolean answer1 = true;
         String q1s = questionOneAnswer.getText().toString();
-        Boolean answer1 = q1s.equals("second degree") || q1s.equals("Second Degree") || q1s.equals("2nd degree");
+        if (q1s.matches("second degree") || q1s.equals("Second Degree") || q1s.equals("2nd degree")) {
+
+           return answer1;
+
+        } else {
+            Toast.makeText(this, "You did not enter an answer", Toast.LENGTH_SHORT).show();
+        }
+
 
         // Question 2 Radio - Correct Answer is 2 (Ligaments)
         Boolean answer2 = qTwoRbTwo.isChecked();
@@ -100,6 +112,8 @@ public class MainActivity extends AppCompatActivity {
 
         /*Resets the score to zero */
     public void resetScore(View v) {
+        Button resetButton = findViewById(R.id.resetBtn);
+        resetButton.setEnabled(false);
         score = 0;
 
     }
