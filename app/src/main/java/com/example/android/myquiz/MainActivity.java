@@ -15,6 +15,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private int score = 0;
+    private int resetScore = 0;
 
     EditText questionOneAnswer;
     RadioButton qTwoRbTwo, qFourRbThree, qSixRbTwo;
@@ -26,6 +27,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        /*Resets the score to zero */
+//        resetBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                resetScore = 0;
+//                displayResetScore(resetScore);
+//
+//
+//            }
+//        });
 
         // Hide the keyboard
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
@@ -129,13 +141,6 @@ public class MainActivity extends AppCompatActivity {
         Button submitButton = findViewById(R.id.submitBtn);
         submitButton.setEnabled(false);
         Toast.makeText(this, String.format(getString(R.string.scoreMessage), finalScore), Toast.LENGTH_SHORT).show();
-    }
-
-    /*Resets the score to zero */
-    public void resetScore(View v) {
-        score = 0;
-//        displayScore(score);
-
     }
 
 }
