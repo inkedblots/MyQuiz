@@ -28,16 +28,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        /*Resets the score to zero */
-        resetBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                resetScore = 0;
-//                displayResetScore(resetScore);
-
-
-            }
-        });
 
         // Hide the keyboard
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
@@ -142,5 +132,13 @@ public class MainActivity extends AppCompatActivity {
         submitButton.setEnabled(false);
         Toast.makeText(this, String.format(getString(R.string.scoreMessage), finalScore), Toast.LENGTH_SHORT).show();
     }
+
+
+    //        /*Resets the score to zero */
+
+        public void resetScore(View v) {
+            resetScore = 0;
+
+        }
 
 }
