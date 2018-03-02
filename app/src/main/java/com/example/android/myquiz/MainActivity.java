@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         qFiveCbThree = findViewById(R.id.qFiveCbThree);
         qFiveCbFour = findViewById(R.id.qFiveCbFour);
         qSixRbTwo = findViewById(R.id.qSixRbTwo);
+        resetBtn = findViewById(R.id.resetBtn);
     }
 
     //Calculate the total score
@@ -49,8 +50,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Question 1 EditText - Correct Answer is (Second Degree)
-//        String q1s = questionOneAnswer.getText().toString();
-//        Boolean answer1 = q1s.equals("second degree") || q1s.equals("Second Degree") || q1s.equals("2nd degree");
 
         EditText questionOneAnswer = findViewById(R.id.questionOne_answer);
         boolean answer1;
@@ -96,15 +95,28 @@ public class MainActivity extends AppCompatActivity {
 
 
         //  Scoring
-        if (answer1) {score++;}
-        if (answer2) {score++;}
-        if (answer3) {score++;}
-        if (answer4) {score++;}
-        if (answer5) {score++;}
-        if (answer6) {score++;}
+        if (answer1) {
+            score++;
+        }
+        if (answer2) {
+            score++;
+        }
+        if (answer3) {
+            score++;
+        }
+        if (answer4) {
+            score++;
+        }
+        if (answer5) {
+            score++;
+        }
+        if (answer6) {
+            score++;
+        }
         return score;
     }
 
+    /*  Submits answers, calculates score */
     public void submitAnswers(View view) {
         int finalScore = getTotalScore();
 
@@ -119,14 +131,10 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, String.format(getString(R.string.scoreMessage), finalScore), Toast.LENGTH_SHORT).show();
     }
 
-        /*Resets the score to zero */
+    /*Resets the score to zero */
     public void resetScore(View v) {
         score = 0;
-        displayScore(score);
-
-        Button resetButton = findViewById(R.id.resetBtn);
-        resetButton.setEnabled(false);
-
+//        displayScore(score);
 
     }
 

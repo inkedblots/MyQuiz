@@ -7,7 +7,7 @@
 
 
     <!--Question 1 hint text-->
-    <string name="hint_text">two words</string>
+    <string name="hint_text">(two words)</string>
 
     <!--Questions and Answers-->
     <!--EditText-->
@@ -24,7 +24,7 @@
 
 
     <!--CheckBox-->
-    <string name="questionThree">3. “Friction Ridges” are commonly known as ________ and _________</string>
+    <string name="questionThree">3. “Friction Ridges” are commonly known as ________ and _________.</string>
 
     <string name="qThreeCbOne">Fingerprints</string> <!--Correct answer-->
     <string name="qThreeCbTwo">Fingernails</string>
