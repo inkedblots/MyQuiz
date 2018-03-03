@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:targetApi="16"
     tools:context="com.example.android.myquiz.MainActivity">
 
     <LinearLayout
@@ -48,6 +49,7 @@
 
 
         <RadioGroup
+            android:id="@+id/rGroupOne"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -134,6 +136,7 @@
             android:textSize="18sp" />
 
         <RadioGroup
+            android:id="@+id/rGroupTwo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -214,6 +217,7 @@
             android:textSize="18sp" />
 
         <RadioGroup
+            android:id="@+id/rGroupThree"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">

@@ -97,24 +97,18 @@ public class MainActivity extends AppCompatActivity {
 
 
         //  Scoring
-        if (answer1) {
-            score++;
-        }
-        if (answer2) {
-            score++;
-        }
-        if (answer3) {
-            score++;
-        }
-        if (answer4) {
-            score++;
-        }
-        if (answer5) {
-            score++;
-        }
-        if (answer6) {
-            score++;
-        }
+        if (answer1) {score++;}
+
+        if (answer2) {score++;}
+
+        if (answer3) {score++;}
+
+        if (answer4) {score++;}
+
+        if (answer5) {score++;}
+
+        if (answer6) {score++;}
+
         return score;
     }
 

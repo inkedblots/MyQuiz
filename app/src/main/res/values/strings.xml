@@ -14,6 +14,11 @@
     <string name="questionOne">1. ________ _________ burns involve the epidermis and part of the dermis.
         This skin appears to be red, tan, or white. The skin is also blistered and painful.</string><!--Correct answer: second degree-->
 
+    <!--RadioButton Group Names-->
+    <string name="radioGroupOne">rbGrpOne</string>
+    <string name="radioGroupTwo">rbGrpTwo</string>
+    <string name="radioGroupThree">rbGrpThree</string>
+
     <!--RadioButton-->
     <string name="questionTwo">2. Which of the following is dense irregular connective tissue that anchors bone to bone?</string>
 
