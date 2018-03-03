@@ -1,6 +1,7 @@
 package com.example.android.myquiz;
 
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -130,9 +131,10 @@ public class MainActivity extends AppCompatActivity {
 
     //        /*Resets the score to zero */
 
-        public void resetScore(View v) {
-            resetScore = 0;
-
-        }
+    public void resetScore(View view){
+        Intent intent = getIntent();
+        finish();
+        startActivity(intent);
+    }
 
 }
