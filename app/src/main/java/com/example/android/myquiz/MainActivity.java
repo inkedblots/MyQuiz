@@ -16,7 +16,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     int score = 0;
-    int resetScore = 0;
 
     EditText questionOneAnswer;
     RadioButton qTwoRbTwo, qFourRbThree, qSixRbTwo;
@@ -128,10 +127,8 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, String.format(getString(R.string.scoreMessage), finalScore), Toast.LENGTH_SHORT).show();
     }
 
-
-    //        /*Resets the score to zero */
-
-    public void resetScore(View view){
+    /* Resets the score to zero */
+    public void resetScore(View view) {
         Intent intent = getIntent();
         finish();
         startActivity(intent);
