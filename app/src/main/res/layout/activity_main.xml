@@ -10,49 +10,50 @@
         android:id="@+id/quiz_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="10dp">
+        android:orientation="vertical">
 
-        <TextView
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingBottom="8dp"
-            android:text="@string/header"
-            android:textSize="30sp"
-            android:textStyle="italic" />
+            android:src="@drawable/thehumanbody"
+            android:contentDescription="@string/header"
+            style="@style/Image" />
 
         <!--Question 1-->
         <TextView
             android:id="@+id/questionOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp"
             android:text="@string/questionOne"
-            android:textSize="18sp" />
+            style="@style/TextViews" />
 
         <EditText
             android:id="@+id/questionOne_answer"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:hint="@string/hint_text"
-            android:inputType="text"
-            android:textSize="16sp" />
+            tools:targetApi="lollipop"
+            style="@style/EditText" />
+
+        <!--Gray line-->
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            style="@style/View" />
 
         <!--Question 2-->
         <TextView
             android:id="@+id/questionTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
             android:text="@string/questionTwo"
-            android:textSize="18sp" />
-
+            style="@style/TextViews"/>
 
         <RadioGroup
             android:id="@+id/rGroupOne"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            style="@style/RadioGroup">
 
             <RadioButton
                 android:id="@+id/qTwoRbOne"
@@ -85,65 +86,75 @@
                 android:checked="false"
                 android:text="@string/qTwoRbFour"
                 android:textSize="16sp" />
-
         </RadioGroup>
+
+        <!--Gray line-->
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            style="@style/View" />
 
         <!--Question 3-->
         <TextView
             android:id="@+id/questionThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
             android:text="@string/questionThree"
-            android:textSize="18sp" />
+            style="@style/TextViews" />
 
         <CheckBox
             android:id="@+id/qThreeCbOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/qThreeCbOne"
-            android:textSize="16sp" />
+            style="@style/checkbox" />
 
         <CheckBox
             android:id="@+id/qThreeCbTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/qThreeCbTwo"
-            android:textSize="16sp" />
+            style="@style/checkbox" />
 
         <CheckBox
             android:id="@+id/qThreeCbThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/qThreeCbThree"
-            android:textSize="16sp" />
+            style="@style/checkbox" />
 
         <CheckBox
             android:id="@+id/qThreeCbFour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/qThreeCbFour"
-            android:textSize="16sp" />
+            style="@style/checkbox" />
+
+        <!--Gray line-->
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            style="@style/View" />
 
         <!--Question 4-->
         <TextView
             android:id="@+id/questionFour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
             android:text="@string/questionFour"
-            android:textSize="18sp" />
+            style="@style/TextViews" />
 
         <RadioGroup
             android:id="@+id/rGroupTwo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            style="@style/RadioGroup">
 
             <RadioButton
                 android:id="@+id/qFourRbOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:checked="false"
                 android:text="@string/qFourRbOne"
                 android:textSize="16sp" />
 
@@ -151,6 +162,7 @@
                 android:id="@+id/qFourRbTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:checked="false"
                 android:text="@string/qFourRbTwo"
                 android:textSize="16sp" />
 
@@ -158,6 +170,7 @@
                 android:id="@+id/qFourRbThree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:checked="false"
                 android:text="@string/qFourRbThree"
                 android:textSize="16sp" />
 
@@ -165,66 +178,78 @@
                 android:id="@+id/qFourRbFour"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:checked="false"
                 android:text="@string/qFourRbFour"
                 android:textSize="16sp" />
         </RadioGroup>
+
+        <!--Gay line-->
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            style="@style/View" />
 
         <!--Question 5-->
         <TextView
             android:id="@+id/questionFive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
             android:text="@string/questionFive"
-            android:textSize="18sp" />
+            style="@style/TextViews" />
 
         <CheckBox
             android:id="@+id/qFiveCbOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/qFiveCbOne"
-            android:textSize="16sp" />
+            style="@style/checkbox" />
 
         <CheckBox
             android:id="@+id/qFiveCbTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/qFiveCbTwo"
-            android:textSize="16sp" />
+            style="@style/checkbox" />
 
         <CheckBox
             android:id="@+id/qFiveCbThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/qFiveCbThree"
-            android:textSize="16sp" />
+            style="@style/checkbox" />
 
         <CheckBox
             android:id="@+id/qFiveCbFour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/qFiveCbFour"
-            android:textSize="16sp" />
+            style="@style/checkbox" />
+
+        <!--Gray line-->
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            style="@style/View" />
 
         <!--Question 6-->
         <TextView
             android:id="@+id/questionSix"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
             android:text="@string/questionSix"
-            android:textSize="18sp" />
+            style="@style/TextViews" />
 
         <RadioGroup
             android:id="@+id/rGroupThree"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            style="@style/RadioGroup">
 
             <RadioButton
                 android:id="@+id/qSixRbOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:checked="false"
                 android:text="@string/qSixRbOne"
                 android:textSize="16sp" />
 
@@ -232,6 +257,7 @@
                 android:id="@+id/qSixRbTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:checked="false"
                 android:text="@string/qSixRbTwo"
                 android:textSize="16sp" />
 
@@ -239,6 +265,7 @@
                 android:id="@+id/qSixRbThree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:checked="false"
                 android:text="@string/qSixRbThree"
                 android:textSize="16sp" />
 
@@ -246,6 +273,7 @@
                 android:id="@+id/qSixRbFour"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:checked="false"
                 android:paddingBottom="10dp"
                 android:text="@string/qSixRbFour"
                 android:textSize="16sp" />
@@ -254,33 +282,25 @@
         <!--Submit and Reset buttons-->
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/resetBtn"
-                android:layout_width="90dp"
-                android:layout_height="36dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_margin="20dp"
-                android:background="@drawable/shape"
-                android:onClick="resetScore"
-                android:text="@string/resetBtn"
-                android:textSize="16sp" />
-
-            <Button
                 android:id="@+id/submitBtn"
-                android:layout_width="90dp"
+                android:layout_width="95dp"
                 android:layout_height="36dp"
-                android:layout_margin="20dp"
-                android:background="@drawable/shape"
                 android:onClick="submitAnswers"
                 android:text="@string/submitBtn"
-                android:textSize="16sp" />
+                style="@style/submitBtn" />
 
+            <Button
+                android:id="@+id/resetBtn"
+                android:layout_width="95dp"
+                android:layout_height="36dp"
+                android:onClick="resetScore"
+                android:text="@string/resetBtn"
+                style="@style/resetBtn" />
         </RelativeLayout>
     </LinearLayout>
-
 </ScrollView>
