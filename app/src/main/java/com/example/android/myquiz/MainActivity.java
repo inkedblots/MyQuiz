@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
     EditText questionOneAnswer;
     RadioButton qTwoRbTwo, qFourRbThree, qSixRbTwo;
-    CheckBox qThreeCbOne, qThreeCbTwo, qThreeCbThree, qThreeCbFour, qFiveCbOne;
-    CheckBox qFiveCbTwo, qFiveCbThree, qFiveCbFour;
+    CheckBox qThreeCbOne, qThreeCbTwo, qThreeCbThree, qThreeCbFour;
+    CheckBox qFiveCbOne, qFiveCbTwo, qFiveCbThree, qFiveCbFour;
     Button resetBtn;
 
     @Override
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         Boolean isAnswer5_choice2 = qFiveCbTwo.isChecked();
         Boolean isAnswer5_choice3 = qFiveCbThree.isChecked();
         Boolean isAnswer5_choice4 = qFiveCbFour.isChecked();
-        Boolean answer5 = !isAnswer5_choice1 && !isAnswer5_choice2 && !isAnswer5_choice3 && isAnswer5_choice4;
+        Boolean answer5 = !isAnswer5_choice1 && !isAnswer5_choice3 && !isAnswer5_choice2 && isAnswer5_choice4;
 
         // Question 6:  RadioButton, Correct Answer 2 (Long Bone)
         Boolean answer6 = qSixRbTwo.isChecked();

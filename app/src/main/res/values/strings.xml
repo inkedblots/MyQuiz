@@ -37,12 +37,12 @@
     <string name="qFourRbFour">Movement</string>
 
     <!--CheckBox-->
-    <string name="questionFive">5. Which is NOT a function of hair?</string>
+    <string name="questionFive">5. Phalanges are commonly known as?</string>
 
-    <string name="qFiveCbOne">Chemical Signal Dispersal</string>
-    <string name="qFiveCbTwo">Facial Expression</string>
-    <string name="qFiveCbThree">Protection</string>
-    <string name="qFiveCbFour">Hemopoiesis</string> <!--Correct answer-->
+    <string name="qFiveCbOne">Fingers</string><!--Correct answer-->
+    <string name="qFiveCbTwo">Carpals</string>
+    <string name="qFiveCbThree">Toes</string><!--Correct answer-->
+    <string name="qFiveCbFour">Tarsals</string>
 
     <!--RadioButton-->
     <string name="questionSix">6. The humerus is an example of a</string>
