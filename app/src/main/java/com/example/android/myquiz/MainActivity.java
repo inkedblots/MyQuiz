@@ -116,12 +116,11 @@ public class MainActivity extends AppCompatActivity {
         if (finalScore < 0) {
             Toast.makeText(this, "Please answer all questions", Toast.LENGTH_SHORT).show();
             score = 0;
-            return;
+        } else {
+            Button submitButton = findViewById(R.id.submitBtn);
+            submitButton.setEnabled(false);
+            Toast.makeText(this, String.format(getString(R.string.scoreMessage), finalScore), Toast.LENGTH_LONG).show();
         }
-
-        Button submitButton = findViewById(R.id.submitBtn);
-        submitButton.setEnabled(false);
-        Toast.makeText(this, String.format(getString(R.string.scoreMessage), finalScore), Toast.LENGTH_LONG).show();
     }
 
     /* Resets the score to zero */
